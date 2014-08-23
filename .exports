@@ -12,6 +12,12 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 export LANG="en_US.UTF-8";
 export LC_ALL="en_US.UTF-8";
 
+#   Set default blocksize for ls, df, du
+#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
+#   ------------------------------------------------------------
+    export BLOCKSIZE=1k
+    
+
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="${yellow}";
 
@@ -23,3 +29,4 @@ export GREP_OPTIONS="--color=auto";
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+
